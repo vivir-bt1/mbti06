@@ -1,0 +1,93 @@
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+.question{
+    display: none;
+}
+
+.result {
+    display: none;
+    margin-top: 30px;
+}
+
+#img{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+
+}
+.progress-bar {
+        background: #ED3F27;
+}
+
+/*---시작페이지---*/
+#thumbsup{ 
+    width : 50px;
+    height: 50px;
+}
+
+/*---결과페이지---*/
+.result-box {
+    background : #f3f3f3;
+    padding-bottom : 40px;
+}
+
+.reply {
+    font-size :1em;
+    line-height: 1.6
+}
+
+.nickname {margin: 15px 0 0 0;}
+.gray {color : grey}
+
+.line {border : solid 1.5px #e5e3e3 ; }
+
+#reaction{
+    margin : 0 15px 0 15px;
+}
+#overcome {
+    margin : 0 15px 0 15px;
+}
+
+/*---궁합---*/
+.relationship {
+    text-align: center;
+    margin: 15px;
+    display: flex;}
+.rel_center{width: 50%}
+.beige {
+    display: block;
+    background-color:bisque;
+    border-radius: 30px;
+    margin: 3px;
+}
+.rel_title{
+    padding: 3px
+}
+
+
+/* ---버튼--- */
+.button_share {
+    background-color : #ed3f27;
+    color : white;
+    display : block;
+    border-radius: 5px;
+    padding: 6px;
+    height: 10%;
+    width: 70%;
+    margin: 0 15% 0 15%;
+    
+
+}
+
+.button_restart {
+    background-color : #6286a5;
+    color : white;
+    display: block;
+    width: 70%;
+    margin: 0 15% 0 15%
+}
+
+
