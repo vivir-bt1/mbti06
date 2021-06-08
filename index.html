@@ -23,12 +23,9 @@
                     <span class="nick">쓰니</span>
                     <span class="bar">|</span><span class="num"> 2021.06.07 19:41</span>
                 </div>
-
                 <div class="sub" style="display: flex">
                     조회&nbsp; <span class="bar">|</span><span class="num"> 1717177</span>
                 </div>
-
-
             </div>
             <button type="button" class="btn btn-outline-dark mt-5" onclick='start();'>테스트 시작하기</button>
     </article>
@@ -72,15 +69,15 @@
                     <p class="rel_title">최고의 궁합</p>
                     <div class="beige">
                         <p class="rel_title" id="good">잘 맞는 mbti</p>
-                        <!-- <img id="good-img" class="rounded-circle mt-5" src="" alt="animal"> -->
-                        <p class="goodEx">설명</p>
+                        <img id="good-img" class="rounded-circle mt-5" src="" alt="animal">
+                        <p id="goodEx">설명</p>
                     </div>
                 </div>
                 <div class="text-center rel_center">
                     <p class="rel_title">최악의 궁합</p>
                     <div class="beige">
                         <p class="rel_title" id="bad">안맞는 mbti</p>
-                        <!-- <img id="bad-img" class="rounded-circle mt-5" src="" alt="animal"> -->
+                        <img id="bad-img" class="rounded-circle mt-5" src="" alt="animal">
                         <p id="badEx">설명</p>
                     </div>
                 </div>
@@ -444,11 +441,11 @@
                 $("#reaction").html(result[mbti]["reaction"]);
                 $("#overcome").html(result[mbti]["overcome"]);
                 $("#good").html(result[mbti]["good"]);
-                $(".goodEx").html(result[mbyi]["goodEx"]);
+                $("#goodEx").html(result[mbti]["goodEx"]);
                 $("#bad").html(result[mbti]["bad"]);
                 $("#badEx").html(result[mbti]["badEx"]);
-
-
+                $("#good-img").attr("src",result[mbti]["good-img"]);
+                $("#bad-img").attr("src",result[mbti]["bad-img"]);
 
             } else {
                 $(".progress-bar").attr('style', 'width: calc(100/12*' + num + '%)');

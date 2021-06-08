@@ -51,6 +51,17 @@ article {
     margin : 0 15px 0 15px;
 }
 
+#good-img{
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+}
+#bad-img{
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+}
+
 /*---궁합---*/
 .relationship {
     text-align: center;
