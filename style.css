@@ -21,7 +21,9 @@ article {
 .progress-bar {
         background: #ED3F27;
 }
-
+/*---폰트---*/
+.f15 {font-size: 15px} 
+.f30 {font-size: 30px;}
 /*---시작페이지---*/
 #thumbsup{ 
     width : 50px;
@@ -29,9 +31,14 @@ article {
 }
 
 /*---결과페이지---*/
+
+.result_title {
+    padding: 15px;}
 .result-box {
     background : #f3f3f3;
     padding-bottom : 40px;
+    padding: 0 15px;
+    
 }
 
 .reply {
@@ -39,7 +46,7 @@ article {
     line-height: 1.6
 }
 
-.nickname {margin: 15px 0 0 0;}
+
 .gray {color : grey}
 
 .line {border : solid 1.5px #e5e3e3 ; }

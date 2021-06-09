@@ -12,22 +12,7 @@
 
 <body class="container">
     <article class="start">
-        <div class="pann-title">
-            <!-- view-tit -->
-            <div style="display: flex">
-                <img id="thumbsup" src="./thumbsup.png" alt="따봉">
-                <h3 class="view-tit"> 나 헤어졌는데 정상임? </h3>
-            </div>
-            <div class="writer">
-                <div class="sub">
-                    <span class="nick">쓰니</span>
-                    <span class="bar">|</span><span class="num"> 2021.06.07 19:41</span>
-                </div>
-                <div class="sub" style="display: flex">
-                    조회&nbsp; <span class="bar">|</span><span class="num"> 1717177</span>
-                </div>
-            </div>
-            <button type="button" class="btn btn-outline-dark mt-5" onclick='start();'>테스트 시작하기</button>
+        <button type="button" class="btn btn-outline-dark mt-5" onclick='start();'>테스트 시작하기</button>
     </article>
     <article class="question">
         <div class="progress mt-5">
@@ -39,11 +24,17 @@
         <button id="B" type="button" class="btn btn-outline-secondary mt-5">Secondary</button>
     </article>
     <article class="result">
+        <div class="line"></div>
+        <div style="display: flex; padding: 0 15px">
+           <img style="width: 100px; margin: 5px;"src="medal.png"> <div class="result_title f30">이별 후 나는 어떤 타입?<br/><span class="gray f15">작성자 | 쓰니 2021.06.31</span></div>
+        </div>
+        <div class="line"></div>
         <h2 id="animal" class="text-center mt-4">동물이름</h2>
         <h2 id="mbti" class="text-center mt-2">mbti</h2>
         <img id="img" class="rounded-circle mt-5" src="" alt="animal">
         <h3 id="explain" class="text-center mt-4">설명</h3>
         <div class="result-box" ;>
+        <div class="line"></div>
             <p class="reply">
                 <div>
                     <img style="width: 50px; margin: 0 5px 0 10px; padding: 0 0 3px 0;" src="icon.png" alt="best"><span
@@ -93,6 +84,9 @@
             <div class="text-center">
                 <div class="addthis_inline_share_toolbox_n5m3"></div>
             </div>
+            <div><br/></div>
+            <div>Medal by faisalovers from the Noun Project</div>
+            <div>copyright JM EK</div>
         </div>
 
     </article>
