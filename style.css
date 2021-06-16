@@ -1,8 +1,10 @@
+
 article {
     display: flex;
     flex-direction: column;
 }
 
+.jua {font-family: 'Black Han Sans', sans-serif;}
 .question{
     display: none;
 }
@@ -22,8 +24,11 @@ article {
         background: #ED3F27;
 }
 /*---폰트---*/
-.f15 {font-size: 15px} 
-.f30 {font-size: 30px;}
+.f15 {font-size: 1em} 
+.f30 {font-size: 2.5em} 
+.jua {font-family: 'Jua', sans-serif;}
+.han {font-family: 'Black Han Sans', sans-serif;}
+
 /*---시작페이지---*/
 #thumbsup{ 
     width : 50px;
@@ -78,7 +83,7 @@ article {
 .beige {
     display: block;
     background-color:bisque;
-    border-radius: 30px;
+    border-radius: 15px;
     margin: 3px;
 }
 .rel_title{

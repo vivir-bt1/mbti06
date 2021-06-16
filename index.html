@@ -8,11 +8,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&display=swap" rel="stylesheet">
 </head>
 
 <body class="container">
     <article class="start">
-        <button type="button" class="btn btn-outline-dark mt-5" onclick='start();'>테스트 시작하기</button>
+        <img src="title.png" style="margin: 50px 0px; width: 100%" alt="title">
+        <button type="button" class="btn btn-outline-dark mt-5 jua" onclick='start();'>테스트 시작하기</button>
+        <span style="margin-top: 80px">
+        <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-sZ1fkZqUrM7AeEWE" data-ad-width="320"
+            data-ad-height="100"></ins>
+        </span>
     </article>
     <article class="question">
         <div class="progress mt-5">
@@ -25,51 +32,50 @@
     </article>
     <article class="result">
         <div class="line"></div>
-        <div style="display: flex; padding: 0 15px">
-           <img style="width: 100px; margin: 5px;"src="medal.png"> <div class="result_title f30">이별 후 나는 어떤 타입?<br/><span class="gray f15">작성자 | 쓰니 2021.06.31</span></div>
+        <div class="text-center han;" style="font-family: 'Black Han Sans', sans-serif; font-size: 2em;">
+            이별 후 나는 어떤 타입?<br/><span class="gray" style="font-size: 0.6em;">작성자 | 쓰니 </span>
         </div>
         <div class="line"></div>
-        <h2 id="animal" class="text-center mt-4">동물이름</h2>
-        <h2 id="mbti" class="text-center mt-2">mbti</h2>
-        <img id="img" class="rounded-circle mt-5" src="" alt="animal">
-        <h3 id="explain" class="text-center mt-4">설명</h3>
+        <h2 id="animal" class="text-center mt-4 jua">동물이름</h2>
+        <h2 id="mbti" class="text-center mt-2 jua">mbti</h2>
+        <img id="img" class="rounded-circle mt-5 jua" src="" alt="animal">
+        <h3 id="explain" class="text-center mt-4 jua">설명</h3>
         <div class="result-box" ;>
-        <div class="line"></div>
+            <div class="line"></div>
             <p class="reply">
-                <div>
-                    <img style="width: 50px; margin: 0 5px 0 10px; padding: 0 0 3px 0;" src="icon.png" alt="best"><span
-                        class="nickname">하버드 이별학과 전문 졸업<span class="gray"> | 2021.06.04
-                        </span></span>
-                </div>
-                <div id="reaction" class="mt-4">반응</div>
+            <div>
+                <img style="width: 50px; margin: 0 5px 0 10px; padding: 0 0 3px 0;" src="icon.png" alt="best"><span
+                    class="nickname">하버드 이별학과 수석 졸업</span>
+            </div>
+            <div id="reaction" class="mt-4">반응</div>
             </p>
             <div class="line"></div>
             <p class="reply">
-                <div>
-                    <img style="width: 50px; margin: 0 5px 0 10px; padding: 0 0 3px 0;" src="icon2.png" alt="rec"><span
-                        class="nickname">울면 근손실와요<span class="gray"> | 2021.05.30 </span></span>
-                </div>
-                <div id="overcome" class="mt-4">극복</div>
+            <div>
+                <img style="width: 50px; margin: 0 5px 0 10px; padding: 0 0 3px 0;" src="icon2.png" alt="rec"><span
+                    class="nickname">울면 근손실와요</span>
+            </div>
+            <div id="overcome" class="mt-4">극복</div>
             </p>
             <div><br /></div>
             <div class="line"></div>
             <div><br /></div>
-            <h2 class="text-center mt-4">나의 환장의 궁합은?</h2>
+            <h2 class="text-center mt-4 han">나의 환장의 궁합은?</h2>
             <div class="relationship">
                 <div class="text-center rel_center">
-                    <p class="rel_title">최고의 궁합</p>
+                    <p class="rel_title jua">최고의 궁합</p>
                     <div class="beige">
                         <p class="rel_title" id="good">잘 맞는 mbti</p>
-                        <img id="good-img" class="rounded-circle mt-5" src="" alt="animal">
-                        <p id="goodEx">설명</p>
+                        <img id="good-img" style="width: 100%" class="text-center;" src="" alt="animal">
+                        <p id="goodEx" style="margin-top:10px;">설명</p>
                     </div>
                 </div>
                 <div class="text-center rel_center">
-                    <p class="rel_title">최악의 궁합</p>
+                    <p class="rel_title jua">최악의 궁합</p>
                     <div class="beige">
                         <p class="rel_title" id="bad">안맞는 mbti</p>
-                        <img id="bad-img" class="rounded-circle mt-5" src="" alt="animal">
-                        <p id="badEx">설명</p>
+                        <img id="bad-img" style="width: 100%" class="text-center" src="" alt="animal">
+                        <p id="badEx" style="margin-top:10px;">설명</p>
                     </div>
                 </div>
             </div>
@@ -84,22 +90,25 @@
             <div class="text-center">
                 <div class="addthis_inline_share_toolbox_n5m3"></div>
             </div>
-            <div><br/></div>
-            <div>Medal by faisalovers from the Noun Project</div>
-            <div>copyright JM EK</div>
+            <div><br /></div>
+            
+            <div class="text-center;" style="font-size: 10px;">copyright JM EK</div>
         </div>
-
+        <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-sZ1fkZqUrM7AeEWE" data-ad-width="320"
+            data-ad-height="100"></ins>
     </article>
+
+    <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
     <input type="hidden" id="EI" value="0">
     <input type="hidden" id="SN" value="0">
     <input type="hidden" id="TF" value="0">
     <input type="hidden" id="JP" value="0">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-    </script>
+        </script>
     <script>
         var num = 1;
         var q = {
@@ -180,15 +189,15 @@
             "INTP": {
                 "mbti": "INTP",
                 "animal": "따뜻한로봇",
-                "explain": "끝내 나는 사랑이란 감정을 이해하지 못했다",
+                "explain": "끝내 나는 사랑이란 감정을<br/>이해하지 못했다",
                 "img": "robot_INTP.png",
-                "reaction": "&#8226;뇌>>>>마음, 이성적 판단이 앞서기에 가장 모쏠이 많은 타입연애<br>&#8226;사랑’을 정의하는데 오래 걸림<br>&#8226;사귄다라는 개념이 어색함<br>&#8226;이별 후 같은 문제를 반복하지 않으려고 연구함 어쩌면 방어기제가 발동해 게임이나 드라마에 몰두하는 모습을 보이기도 함",
+                "reaction": "&#8226;뇌>>>>마음, 이성적 판단이 앞서기에 가장 모쏠이 많은 타입연애<br>&#8226;'사랑’을 정의하는데 오래 걸림<br>&#8226;사귄다라는 개념이 어색함<br>&#8226;이별 후 같은 문제를 반복하지 않으려고 연구함 어쩌면 방어기제가 발동해 게임이나 드라마에 몰두하는 모습을 보이기도 함",
                 "overcome": "&#8226;방법이랄 것이 있을까요? 이미 정리 끝내시지 않았나요?<br>&#8226;다음 연애 때는 사랑은 논리로 하는 것이 아님을 기억할 것 (feat. 자이언티 &#8226; 미안해)<br>&#8226;한번쯤은 속 시원하게 마음 가는대로 행동해보는 걸 추천함",
-                "goodEx": "관심없으면 먼지 한 톨의 눈길도 안줌",
-                "good": "쿨내 풀풀 고양이",
+                "goodEx": "관심없으면<br/>눈길도 안줌",
+                "good": "쿨내 풀풀<br/>고양이",
                 "good-img": "cat_ENTJ.png",
-                "bad": "쓰러지지 않는 오소리",
-                "badEx": "이별도 나를 막을 수 없으셈",
+                "bad": "쓰러지지 않는<br/>오소리",
+                "badEx": "이별도 나를<br/>막을 수 없으셈",
                 "bad-img": "osori_ISTJ.png",
             },
             "INTJ": {
@@ -198,19 +207,19 @@
                 "img": "wolf_INTJ.png",
                 "reaction": "&#8226;애초에 자기 영역에 들어오는 것을 싫어하므로 연애 자체를 잘 시작하지 않음<br> &#8226; 헤어진 후에는 아파하기 보다는 이별의 이유를 파악하려고 함<br>&#8226; 이때 본인 잘못이라는 결론이 나오면 전 애인에게 다시 연락할지도..?<Br> &#8226; 연애 에너지를 다른 곳에 분배해 생산력이 증가함, 남들이 보기에는 이별 후 더 행복한 모습으로 보임",
                 "overcome": "&#8226; 특성 상 연애에도 최선을 다함 <br>&#8226; 그러니 이별이 자기 잘못이라고 해도 연인에게 연락하지 말 것. 다시 만날 이유가 될 수 없음<br>&#8226;자기 영역에서 열심히 활동하다 보면 어느새 정상 궤도에 다시 진입한 자기 자신을 발견할 것임",
-                "goodEx": "절대 꺾이지 않는 자존심",
+                "goodEx": "절대 꺾이지<br/>않는 자존심",
                 "good": "목이 꼿꼿한 기린",
                 "good-img": "dorong_ENTP.png",
                 "bad": "쉬지 않는 햄스터",
-                "badEx": "헤어져도 쳇바퀴 돌아간다",
+                "badEx": "헤어져도<br/>쳇바퀴는 돌아간다",
                 "bad-img": "hamster_ESTJ.png",
             },
             "INFP": {
-                "goodEx": "절대 개복치를 놀라게 해선 안돼..",
-                "good": "쿠크다스 <br/>멘탈 개복치",
+                "goodEx": "절대 개복치를<br/>놀라게 해선 안돼",
+                "good": "쿠크다스 멘탈<br/>개복치",
                 "good-img": "mola_ENFJ.png",
-                "bad": "붙임성 끝판왕 웰시코기",
-                "badEx": "여기저기 빵댕이 쉐킷쉐킷",
+                "bad": "붙임성 끝판왕<br/>웰시코기",
+                "badEx": "여기저기<br/>빵댕이 쉐킷쉐킷",
                 "bad-img": "welsh_ESFP.png",
                 "mbti": "INFP",
                 "animal": "추억 모아두는 다람쥐",
@@ -220,11 +229,11 @@
                 "overcome": "&#8226;공감능력과 감수성이 넘치는 당신은 할 수 있는 만큼 사랑을 나눠 준 상태임<br>&#8226;그러므로 관계의 실패를 자기 탓 하지 말 것<br>&#8226;사람은 사람으로 잊는다! 새롭게 폴인럽~하면 깨끗하게 잊을 수 있을거임"
             },
             "INFJ": {
-                "goodEx": "내가 언제 슬퍼했더라",
+                "goodEx": "내가 언제<br/>슬퍼했더라",
                 "good": "금사빠 금붕어",
                 "good-img": "goldfish_ENFP.png",
                 "bad": "현실도피 칠면조",
-                "badEx": "이게 진짜일리 없어",
+                "badEx": "이게<br/>진짜일리 없어",
                 "bad-img": "turkey_ISFP.png",
                 "mbti": "INFJ",
                 "animal": "겉딱속여 거북이",
@@ -234,11 +243,11 @@
                 "overcome": "&#8226;글을 쓰며 자신의 감정을 정리하는 것을 추천함 <br>&#8226;감정을 정리하다보면 어느 새 이별을 수용한 자기 자신을 발견할 수 있음<br>&#8226;만일 감정을 마주하는 것이 무섭다면 자기 계발에 집중하는 방법도 좋음"
             },
             "ISFP": {
-                "goodEx": "일상으로 귀소본능 만렙 ",
+                "goodEx": "일상으로<br/>귀소본능 만렙 ",
                 "good": "평화의 상징 비둘기",
                 "good-img": "pigeon_ESFJ.png",
                 "bad": "겉딱속여 거북이",
-                "badEx": "잘가 (가지마~) 행복해 (떠나지마~)<br/>feat. 거짓말",
+                "badEx": "잘가 (가지마~)<br/>행복해 (떠나지마~)",
                 "bad-img": "turtle_INFJ.png",
                 "mbti": "ISFP",
                 "animal": "얼굴만 숨기는 칠면조",
@@ -248,11 +257,11 @@
                 "overcome": "&#8226;마음을 제대로 바라보는 자세가 필요함<br>&#8226; 친구들과 술을 마시기 보다는 일기를 쓰거나 명상을 하는 등 혼자만의 시간을 가질 것을 추천<br>&#8226; 제대로 정리하고 앞으로 나아가자 아자아자"
             },
             "ISFJ": {
-                "goodEx": "사랑이 다른 사랑으로 잊혀지네 (feat.하림)",
-                "good": "다음 사랑을 찾아나서는 하이에나",
+                "goodEx": "사랑이 다른<br/>사랑으로 잊혀지네",
+                "good": "다음 사랑을<br/>찾는 하이에나",
                 "good-img": "hyena_ESTP.png",
-                "bad": "금사빠 금붕어",
-                "badEx": "내가 언제 슬퍼했더라",
+                "bad": "금사빠<br/>금붕어",
+                "badEx": "내가 언제<br/>슬퍼했더라",
                 "bad-img": "goldfish_ENFP.png",
                 "mbti": "ISFJ",
                 "animal": "SNS 정찰 중인 미어캣",
@@ -262,11 +271,11 @@
                 "overcome": "&#8226;자신의 마음을 털어놓지 않더라도 친구들을 만나며 함께 시간을 보내기를 추천함<br>&#8226; 혹시나 다시 연락해볼지 말지 고민이 된다면 친구에게 꼭! 먼저 물어보길<Br>&#8226; 귀가 얇은 당신에게 좋은 조언을 해줄 것임"
             },
             "ISTP": {
-                "goodEx": "헤어져도 쳇바퀴 돌아간다",
-                "good": "쉬지 않는 햄스터",
+                "goodEx": "헤어져도<br/>쳇바퀴는 돌아간다",
+                "good": "쉬지 않는<br/>햄스터",
                 "good-img": "hamster_ESTJ.png",
-                "bad": "쿠크다스 멘탈 개복치",
-                "badEx": "절대 개복치를 놀라게 해선 안돼..",
+                "bad": "쿠크다스<br/>멘탈 개복치",
+                "badEx": "절대 개복치를<br/>놀라게 해선 안돼..",
                 "bad-img": "mola_ENFJ.png",
                 "mbti": "ISTP",
                 "animal": "득도 티벳여우",
@@ -276,11 +285,11 @@
                 "overcome": "&#8226;원데이 클래스 등 새로운 경험을 다양하게 하다보면 자연스럽게 극복됨<Br>&#8226; 그래도 가끔은 자신의 감정을 들여다보며 ‘나에게도 잘못이 있었나?’ 생각하는 시간이 필요함<br>&#8226; 감정에 무감각한 편이기에 이러한 시간이 다음 관계에 도움이 될 것임"
             },
             "ISTJ": {
-                "goodEx": "여기저기 빵댕이 쉐킷쉐킷",
-                "good": "붙임성 끝판왕 웰시코기",
+                "goodEx": "여기저기<br/>빵댕이 쉐킷쉐킷",
+                "good": "붙임성 끝판왕<br/>웰시코기",
                 "good-img": "welsh_ESFP.png",
-                "bad": "따뜻한 로봇",
-                "badEx": "끝내 나는 사랑이란 감정을 이해하지 못했다",
+                "bad": "따뜻한<br/>로봇",
+                "badEx": "끝내 나는 감정을<br/>이해하지 못했다",
                 "bad-img": "robot_INTP.png",
                 "mbti": "ISTJ",
                 "animal": "쓰러지지 않는 오소리",
@@ -290,11 +299,11 @@
                 "overcome": "&#8226;실용성, 효율성을 중시하기에 감정보다는 ‘시간낭비를 했다’는 생각에 괴로워할 것임<Br>&#8226; 그렇기에 헤어진 후에 실리는 따지기 보다는 두루뭉술하게 좋았던 기억을 떠올리고자 노력하길<br>&#8226; 제일 좋은 건 뒤돌아보지 말고 현재 주어진 일과 미래에 내가 나아갈 길에 집중하는 것!"
             },
             "ENFP": {
-                "goodEx": "잘가 (가지마~) 행복해 (떠나지마~)<br/>feat. 거짓말",
-                "good": "겉딱속여 거북이",
+                "goodEx": "잘가 (가지마~)<br/>행복해 (떠나지마~)",
+                "good": "겉딱속여<br/>거북이",
                 "good-img": "turtle_INFJ.png",
-                "bad": "SNS 정찰 중인 미어캣",
-                "badEx": "나 없이...잘 지내LI?",
+                "bad": "SNS 정찰 중인<br/>미어캣",
+                "badEx": "나 없이...<br/>잘 지내LI?",
                 "bad-img": "meerkat_ISFJ.png",
                 "mbti": "ENFP",
                 "animal": "금사빠 금붕어",
@@ -304,11 +313,11 @@
                 "overcome": "&#8226; 친구들과 모임 잦은 스타일답게 평소 고민 나누는 친구들 만나서 헤어진 이유와 상황을 말하며 마음 정리함<Br>&#8226; 새로운 사람을 만나면 금방 잊음<Br>&#8226; 그래도 너무 빨리 뉴 펄슨을 만나기보다 혼자 정리하는 시간을 가지면 더 좋은 인연을 찾을 수 있을 것!"
             },
             "ENTP": {
-                "good": "침범불가 늑대",
-                "goodEx": "내 영역은 내가 지킨다",
+                "good": "침범불가<br/>늑대",
+                "goodEx": "내 영역은<br/>내가 지킨다",
                 "good-img": "wolf_INTJ.png",
-                "bad": "평화의 상징 비둘기",
-                "badEx": "일상으로 귀소본능 만렙 ",
+                "bad": "평화의 상징<br/>비둘기",
+                "badEx": "일상으로<br/>귀소본능 만렙 ",
                 "bad-img": "pigeon_ESFJ.png",
                 "mbti": "ENTP",
                 "animal": "목이 꼿꼿한 기린",
@@ -318,53 +327,53 @@
                 "overcome": "&#8226;스스로 슬퍼할 시간 주지 않고 새로운 것을 시도하거나 새 사람을 만듬<Br>&#8226; 익명의 SNS 같은게 있을 확률이 높음. 주로 그 공간에는 자기 생각 정리하는 용도로 써서 평소의 말많음이 글로 폭발함. <Br>&#8226; 이별 후의 감정을 배설하듯 뱉어내면서 생각을 정리함."
             },
             "ENFJ": {
-                "good": "추억 모아두는 다람쥐",
-                "goodEx": "ㅈrLi..? 너는 지금 뭐해..?",
+                "good": "추억 모아두는<br/>다람쥐",
+                "goodEx": "ㅈrLi..?<br/>너는 지금 뭐해..?",
                 "good-img": "squrrel_INFP.png",
-                "bad": "득도 티벳여우",
-                "badEx": "어차피 흘러가는 인연이니라",
+                "bad": "득도<br/>티벳여우",
+                "badEx": "어차피 흘러가는<br/>인연이니라",
                 "bad-img": "fox_ISTP.png",
                 "mbti": "ENFJ",
                 "animal": "쿠크다스 멘탈 개복치",
-                "explain": "절대 개복치를 놀라게 해선 안돼..",
+                "explain": "절대 개복치를<br/>놀라게 해선 안돼..",
                 "img": "mola_ENFJ.png",
                 "reaction": "&#8226;이별하기 직전까지 그 누구보다도 갈등을 해결하기 위해 노력했을 스타일이라 가장 지쳐있을 유형<Br>&#8226; 헤어지고 친구나 부모님에게 헤어졌다는게 보일정도로 티남<Br>&#8226; 슬픈 음악 듣고, 노래방에서 울기도함",
                 "overcome": "&#8226; 미련이 많기에 전 애인에게 구질구질한 연락을 보낼 확률이 있음<Br>&#8226; 그렇기에 이별 후 asap하게 카톡과 인스타그램을 끊을 것<Br>&#8226; 연애할 때는 해보지 못했던 '일탈'을 해보세요. FJ 가 하는 일탈이라고 해봤자 뭐..."
             },
             "ENTJ": {
-                "good": "따뜻한 로봇",
-                "goodEx": "끝내 나는 사랑이란 감정을 이해하지 못했다",
+                "good": "따뜻한<br/>로봇",
+                "goodEx": "끝내 나는 감정을<br/>이해하지 못했다",
                 "good-img": "robot_INTP.png",
-                "bad": "다음 사랑을 찾아나서는 하이에나",
-                "badEx": "사랑이 다른 사랑으로 잊혀지네 (feat.하림)",
+                "bad": "다음 사랑을<br/>찾는 하이에나",
+                "badEx": "사랑이 다른<br/>사랑으로 잊혀지네",
                 "bad-img": "hyena_ESTP.png",
                 "mbti": "ENTJ",
                 "animal": "쿨내 풀풀 고양이",
-                "explain": "관심없으면 먼지 한 톨의 눈길도 안줌",
+                "explain": "관심없으면 먼지 한 톨의<br/>눈길도 안줌",
                 "img": "cat_ENTJ.png",
                 "reaction": "&#8226;싸우면서 마음의 문 닫고 정 떨쳐냈기 때문에 일생 데미지 제로 수준<Br>&#8226; 쿨함. 누가물어보면 “나 차였어” 한마디 하고 끝남<Br>&#8226; 헤어지면 홀가분하고 해방감 느낌<Br>&#8226; 자신의 영역에서 그 사람을 완전히 지워버림",
                 "overcome": "&#8226; 극강의 계획러버이기에 주말에 연인 만나는 것도 일정의 하나였음<Br>&#8226; 이제는 그간 못했던 평소에 관심있던 운동이나 취미를 배워보는 것을 추천함<BR>&#8226;효율성을 중시하기에 슬픈 에너지를 금방 생산 에너지로 바꿀 것임"
             },
             "ESTP": {
-                "good": "SNS 정찰 중인 미어캣",
-                "goodEx": "나 없이...잘 지내LI?",
+                "good": "SNS 정찰 중인<br/>미어캣",
+                "goodEx": "나 없이...<br/>잘 지내LI?",
                 "good-img": "meerkat_ISFJ.png",
-                "bad": "쿨내 풀풀 고양이",
-                "badEx": "관심없으면 먼지 한 톨의 눈길도 안줌",
+                "bad": "쿨내 풀풀<br/>고양이",
+                "badEx": "관심없으면<br/>눈길도 안줌",
                 "bad-img": "cat_ENTJ.png",
                 "mbti": "ESTP",
                 "animal": "다음 사랑을 찾아나서는 하이에나",
-                "explain": "사랑이 다른 사랑으로 잊혀지네 (feat.하림)",
+                "explain": "사랑이 다른 사랑으로 잊혀지네<br/>(feat.하림)",
                 "img": "hyena_ESTP.png",
                 "reaction": "&#8226; '사람은 사람으로 잊는다'가 가장 잘 어울리는 유형<BR>&#8226; 친구들과 여행가고 음식먹으러 다니며 항상 밝은 모습을 유지함<BR>&#8226; 변화가 눈에 띄지않아 주변에선 잘만나는 줄 앎",
                 "overcome": "&#8226;  가장 연애활동에 관심 많은 타입이여서 바로 다음 상대를 만날 만한 장소를 쏙쏙 찾아다니는 타입<BR>&#8226; 사랑을 사랑으로 잊는 것도 좋으나 혼자만의 시간을 가지며 감정을 받아들이는 시간을 가지길 <BR>&#8226;  이러한 시간이 당신의 다음 관계를 건강하게 만드는 밑거름이 될 것임"
             },
             "ESFP": {
-                "good": "득도 티벳여우",
-                "goodEx": "어차피 흘러가는 인연이니라",
+                "good": "득도<br/>티벳여우",
+                "goodEx": "어차피 흘러가는<br/>인연이니라",
                 "good-img": "fox_ISTP.png",
-                "bad": "추억 모아두는 다람쥐",
-                "badEx": "ㅈrLi..? 너는 지금 뭐해..?",
+                "bad": "추억 모아두는<br/>다람쥐",
+                "badEx": "ㅈrLi..?<br/>너는 지금 뭐해..?",
                 "bad-img": "squrrel_INFP.png",
                 "mbti": "ESFP",
                 "animal": "붙임성 끝판왕 웰시코기",
@@ -375,10 +384,10 @@
             },
             "ESFJ": {
                 "good": "현실도피 칠면조",
-                "goodEx": "이게 진짜일리 없어",
+                "goodEx": "이게<br/>진짜일리없어",
                 "good-img": "turkey_ISFP.png",
                 "bad": "목이 꼿꼿한 기린",
-                "badEx": "절대 꺾이지 않는 자존심",
+                "badEx": "절대 꺾이지<br/>않는 자존심",
                 "bad-img": "dorong_ENTP.png",
                 "mbti": "ESFJ",
                 "animal": "평화의 상징 비둘기",
@@ -388,11 +397,11 @@
                 "overcome": "&#8226; 헤어진 후에도 풀어지지 않고 자기관리로에 돌아가는 타입 <BR>&#8226; 당신은 이미 최선을 다했기때문에 상대방을 향한 부채감을 내려둘것<BR>&#8226; 친구들 모아서 계획짜고 액티브한 활동을 해보는건 어떠신지<BR>&#8226; 약속을 많이 만들면서 외부활동이 많이 만들면 새로운 인연을 빨리 찾을 수 있을 것"
             },
             "ESTJ": {
-                "good": "쓰러지지 않는 오소리",
-                "goodEx": "이별도 나를 막을 수 없으셈",
+                "good": "쓰러지지 않는<br/>오소리",
+                "goodEx": "이별도 나를<br/>막을 수 없으셈",
                 "good-img": "osori_ISTJ.png",
-                "bad": "침범불가 늑대",
-                "badEx": "내 영역은 내가 지킨다",
+                "bad": "침범불가<br/>늑대",
+                "badEx": "내 영역은<br/>내가 지킨다",
                 "bad-img": "wolf_INTJ.png",
                 "mbti": "ESTJ",
                 "animal": "쉬지 않는 햄스터",
@@ -423,10 +432,10 @@
                 $(".question").hide();
                 $(".result").show();
                 var mbti = "";
-                ($("#EI").val() < 2) ? mbti += "I": mbti += "E";
-                ($("#SN").val() < 2) ? mbti += "N": mbti += "S";
-                ($("#TF").val() < 2) ? mbti += "F": mbti += "T";
-                ($("#JP").val() < 2) ? mbti += "P": mbti += "J";
+                ($("#EI").val() < 2) ? mbti += "I" : mbti += "E";
+                ($("#SN").val() < 2) ? mbti += "N" : mbti += "S";
+                ($("#TF").val() < 2) ? mbti += "F" : mbti += "T";
+                ($("#JP").val() < 2) ? mbti += "P" : mbti += "J";
                 alert(mbti);
                 $("#img").attr("src", result[mbti]["img"]);
                 $("#animal").html(result[mbti]["animal"]);
@@ -438,8 +447,8 @@
                 $("#goodEx").html(result[mbti]["goodEx"]);
                 $("#bad").html(result[mbti]["bad"]);
                 $("#badEx").html(result[mbti]["badEx"]);
-                $("#good-img").attr("src",result[mbti]["good-img"]);
-                $("#bad-img").attr("src",result[mbti]["bad-img"]);
+                $("#good-img").attr("src", result[mbti]["good-img"]);
+                $("#bad-img").attr("src", result[mbti]["bad-img"]);
 
             } else {
                 $(".progress-bar").attr('style', 'width: calc(100/12*' + num + '%)');
