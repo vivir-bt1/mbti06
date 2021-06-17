@@ -16,16 +16,21 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body class="container">
     <article class="start">
-        <img src="title.png" style="margin: 50px 0px; width: 100%" alt="title">
+        <img src="title.png" style="margin: 50px 10%; width: 80%" alt="title">
         <button type="button" class="btn btn-outline-dark mt-5 jua" onclick='start();'>테스트 시작하기</button>
         <span style="margin-top: 80px">
-            <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-sZ1fkZqUrM7AeEWE" data-ad-width="320"
-                data-ad-height="100"></ins>
+            <ins class="kakao_ad_area" style="display:none;" 
+            data-ad-unit    = "DAN-jaXdRYEgxTT7q4B4" 
+            data-ad-width   = "320" 
+            data-ad-height  = "50"></ins> 
+           <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
         </span>
         <img src="cat_ENTJ.png" width=1 height=1>
         <img src="dorong_ENTP.png" width=1 height=1>
@@ -48,10 +53,10 @@
         <div class="progress mt-5">
             <div class="progress-bar" role="progressbar" style="width: calc(100/12*1%)"></div>
         </div>
-        <h2 id="title" class="text-center mt-5">문제</h2>
+        <h2 id="title" class="text-center mt-5 jua">문제</h2>
         <input id="type" type="hidden" value="EI">
-        <button id="A" type="button" class="btn btn-outline-secondary mt-5">Secondary</button>
-        <button id="B" type="button" class="btn btn-outline-secondary mt-5">Secondary</button>
+        <button id="A" type="button" class="nanum btn btn-outline-secondary mt-5">Secondary</button>
+        <button id="B" type="button" class="nanum btn btn-outline-secondary mt-5">Secondary</button>
     </article>
     <article class="result">
         <div class="line"></div>
@@ -89,7 +94,9 @@
                     <p class="rel_title jua">최고의 궁합</p>
                     <div class="beige">
                         <p class="rel_title jua" id="good">잘 맞는 mbti</p>
-                        <img id="good-img" style="width: 100%" class="text-center;" src="" alt="animal">
+                        <p>
+                        <img id="good-img" style="height: 100%" class="text-center;" src="" alt="animal">
+                        </p>
                         <p class="jua" id="goodEx" style="margin-top:10px;">설명</p>
                     </div>
                 </div>
@@ -97,7 +104,9 @@
                     <p class="rel_title jua">최악의 궁합</p>
                     <div class="beige">
                         <p class="rel_title jua" id="bad">안맞는 mbti</p>
-                        <img id="bad-img" style="width: 100%" class="text-center" src="" alt="animal">
+                        <p>
+                        <img id="bad-img" style="height: 100%" class="text-center" src="" alt="animal">
+                    </p>
                         <p class="jua" id="badEx" style="margin-top:10px;">설명</p>
                     </div>
                 </div>
@@ -115,10 +124,13 @@
             </div>
             <div><br /></div>
 
-            <div class="text-center;" style="font-size: 10px;">copyright JM EK</div>
+            <div style="font-size: 10px; text-align: center;">copyright JM EK</div>
         </div>
-        <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-sZ1fkZqUrM7AeEWE" data-ad-width="320"
-            data-ad-height="100"></ins>
+        <ins class="kakao_ad_area" style="display:none;" 
+        data-ad-unit    = "DAN-jaXdRYEgxTT7q4B4" 
+        data-ad-width   = "320" 
+        data-ad-height  = "50"></ins> 
+       <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
     </article>
 
     <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
@@ -186,8 +198,8 @@
             6: {
                 "title": "한 달 동안 고민하며 준비한 애인을 위한  이벤트.<br/>당신을 보람차게 할 애인의 반응은? ",
                 "type": "TF",
-                "A": "어떻게 이런 이벤트를 준비할 생각을 했어? ",
-                "B": "이벤트 준비하느라 고생했겠다. 늘 고마워"
+                "A": "어떻게 이런 이벤트를 준비할 생각을 했어? 정말 천재야",
+                "B": "이벤트 준비하느라 고생했겠다. 내 마음을 잘 알아줘서 고마워"
             },
             5: {
                 "title": "잠들기 전 애인과 통화에서 나는?",
@@ -459,7 +471,6 @@
                 ($("#SN").val() < 2) ? mbti += "N": mbti += "S";
                 ($("#TF").val() < 2) ? mbti += "F": mbti += "T";
                 ($("#JP").val() < 2) ? mbti += "P": mbti += "J";
-                alert(mbti);
                 $("#img").attr("src", result[mbti]["img"]);
                 $("#animal").html(result[mbti]["animal"]);
                 $("#mbti").html(result[mbti]["mbti"]);
