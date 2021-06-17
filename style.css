@@ -110,12 +110,5 @@ article {
     color : white;
     display: block;
     width: 70%;
-    margin: 0 15% 0 15%
-}
-
-
-/*---썸네일---*/
-#thumbnail {
-    width : 400px;
-    height : 210px;
+    margin: 0 15% 0 15%;
 }
