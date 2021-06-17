@@ -114,3 +114,8 @@ article {
 }
 
 
+/*---썸네일---*/
+#thumbnail {
+    width : 400px;
+    height : 210px;
+}
